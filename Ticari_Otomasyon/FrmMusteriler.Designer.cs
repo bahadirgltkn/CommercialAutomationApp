@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMusteriler));
             this.gridControlMusteriler = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -38,7 +38,7 @@
             this.cbxIlce = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cbxIl = new DevExpress.XtraEditors.ComboBoxEdit();
             this.mskTc = new System.Windows.Forms.MaskedTextBox();
-            this.mskTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.mskTelefon1 = new System.Windows.Forms.MaskedTextBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
@@ -50,7 +50,7 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.mskTelefon_2 = new System.Windows.Forms.MaskedTextBox();
+            this.mskTelefon2 = new System.Windows.Forms.MaskedTextBox();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.txtSoyad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -58,6 +58,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtId = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlMusteriler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -73,9 +74,9 @@
             // 
             // gridControlMusteriler
             // 
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControlMusteriler.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControlMusteriler.Location = new System.Drawing.Point(0, 0);
             this.gridControlMusteriler.MainView = this.gridView1;
             this.gridControlMusteriler.Name = "gridControlMusteriler";
@@ -95,12 +96,13 @@
             // 
             this.groupControl1.Appearance.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Question;
             this.groupControl1.Appearance.Options.UseBorderColor = true;
+            this.groupControl1.Controls.Add(this.btnTemizle);
             this.groupControl1.Controls.Add(this.txtMail);
             this.groupControl1.Controls.Add(this.txtVergiDaire);
             this.groupControl1.Controls.Add(this.cbxIlce);
             this.groupControl1.Controls.Add(this.cbxIl);
             this.groupControl1.Controls.Add(this.mskTc);
-            this.groupControl1.Controls.Add(this.mskTelefon);
+            this.groupControl1.Controls.Add(this.mskTelefon1);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.BtnSil);
@@ -112,7 +114,7 @@
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.mskTelefon_2);
+            this.groupControl1.Controls.Add(this.mskTelefon2);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.txtSoyad);
             this.groupControl1.Controls.Add(this.labelControl3);
@@ -176,14 +178,14 @@
             this.mskTc.TabIndex = 26;
             this.mskTc.ValidatingType = typeof(int);
             // 
-            // mskTelefon
+            // mskTelefon1
             // 
-            this.mskTelefon.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskTelefon.Location = new System.Drawing.Point(89, 137);
-            this.mskTelefon.Mask = "(999) 000-0000";
-            this.mskTelefon.Name = "mskTelefon";
-            this.mskTelefon.Size = new System.Drawing.Size(232, 29);
-            this.mskTelefon.TabIndex = 25;
+            this.mskTelefon1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTelefon1.Location = new System.Drawing.Point(89, 137);
+            this.mskTelefon1.Mask = "(999) 000-0000";
+            this.mskTelefon1.Name = "mskTelefon1";
+            this.mskTelefon1.Size = new System.Drawing.Size(232, 29);
+            this.mskTelefon1.TabIndex = 25;
             // 
             // labelControl11
             // 
@@ -315,14 +317,14 @@
             this.labelControl5.TabIndex = 11;
             this.labelControl5.Text = "Mail:";
             // 
-            // mskTelefon_2
+            // mskTelefon2
             // 
-            this.mskTelefon_2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskTelefon_2.Location = new System.Drawing.Point(89, 172);
-            this.mskTelefon_2.Mask = "(999) 000-0000";
-            this.mskTelefon_2.Name = "mskTelefon_2";
-            this.mskTelefon_2.Size = new System.Drawing.Size(232, 29);
-            this.mskTelefon_2.TabIndex = 9;
+            this.mskTelefon2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTelefon2.Location = new System.Drawing.Point(89, 172);
+            this.mskTelefon2.Mask = "(999) 000-0000";
+            this.mskTelefon2.Name = "mskTelefon2";
+            this.mskTelefon2.Size = new System.Drawing.Size(232, 29);
+            this.mskTelefon2.TabIndex = 9;
             // 
             // labelControl4
             // 
@@ -391,6 +393,22 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID:";
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Appearance.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTemizle.Appearance.ForeColor = System.Drawing.Color.White;
+            this.btnTemizle.Appearance.Options.UseBackColor = true;
+            this.btnTemizle.Appearance.Options.UseFont = true;
+            this.btnTemizle.Appearance.Options.UseForeColor = true;
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(146, 669);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(127, 42);
+            this.btnTemizle.TabIndex = 31;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // FrmMusteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -429,7 +447,7 @@
         private DevExpress.XtraEditors.ComboBoxEdit cbxIlce;
         private DevExpress.XtraEditors.ComboBoxEdit cbxIl;
         private System.Windows.Forms.MaskedTextBox mskTc;
-        private System.Windows.Forms.MaskedTextBox mskTelefon;
+        private System.Windows.Forms.MaskedTextBox mskTelefon1;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
@@ -441,7 +459,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private System.Windows.Forms.MaskedTextBox mskTelefon_2;
+        private System.Windows.Forms.MaskedTextBox mskTelefon2;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.TextEdit txtSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl3;
@@ -449,5 +467,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtId;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.SimpleButton btnTemizle;
     }
 }

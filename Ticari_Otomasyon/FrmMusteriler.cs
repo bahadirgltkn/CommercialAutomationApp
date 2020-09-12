@@ -20,7 +20,20 @@ namespace Ticari_Otomasyon
         //SQLCONNECTION
         SqlBaglantisi sqlBaglantisi = new SqlBaglantisi();
 
-        public void Listele()
+        public void temizle()
+        {
+            txtId.Text = "";
+            txtAd.Text = "";
+            txtSoyad.Text = "";
+            mskTelefon1.Text = "";
+            mskTelefon2.Text = "";
+            mskTc.Text = "";
+            txtMail.Text = "";
+            txtVergiDaire.Text = "";
+            rchAdres.Text = "";
+        }
+
+        public void musteriListele()
         {
             //LISTING DATA ON THE GRID
             DataTable dt = new DataTable();
@@ -43,12 +56,15 @@ namespace Ticari_Otomasyon
 
         private void FrmMusteriler_Load(object sender, EventArgs e)
         {
-            Listele();
+            musteriListele();
             sehirListele();
+            temizle();
         }
 
         private void cbxIl_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //when the cbxIl value changes, the value in the cbxIlce is reset   
+
             cbxIlce.Text = "";
             cbxIlce.Properties.Items.Clear();
             
@@ -67,8 +83,8 @@ namespace Ticari_Otomasyon
             SqlCommand command = new SqlCommand("insert into TBL_MUSTERILER (AD,SOYAD,TELEFON,TELEFON2,TC,MAIL,IL,ILCE,ADRES,VERGIDAIRE) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10)", sqlBaglantisi.baglanti());
             command.Parameters.AddWithValue("@p1", txtAd.Text);
             command.Parameters.AddWithValue("@p2", txtSoyad.Text);
-            command.Parameters.AddWithValue("@p3", mskTelefon.Text); 
-            command.Parameters.AddWithValue("@p4", mskTelefon_2.Text);
+            command.Parameters.AddWithValue("@p3", mskTelefon1.Text); 
+            command.Parameters.AddWithValue("@p4", mskTelefon2.Text);
             command.Parameters.AddWithValue("@p5", mskTc.Text);
             command.Parameters.AddWithValue("@p6", txtMail.Text);
             command.Parameters.AddWithValue("@p7", cbxIl.Text);
@@ -78,7 +94,8 @@ namespace Ticari_Otomasyon
             command.ExecuteNonQuery();
             sqlBaglantisi.baglanti().Close();
             MessageBox.Show("Müşteri sisteme eklendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Listele();
+            musteriListele();
+            temizle();
 
         }
 
@@ -90,8 +107,8 @@ namespace Ticari_Otomasyon
                 txtId.Text = dataRow["ID"].ToString();
                 txtAd.Text = dataRow["AD"].ToString();
                 txtSoyad.Text = dataRow["SOYAD"].ToString();
-                mskTelefon.Text = dataRow["TELEFON"].ToString();
-                mskTelefon_2.Text = dataRow["TELEFON2"].ToString();
+                mskTelefon1.Text = dataRow["TELEFON"].ToString();
+                mskTelefon2.Text = dataRow["TELEFON2"].ToString();
                 mskTc.Text = dataRow["TC"].ToString();
                 txtMail.Text = dataRow["MAIL"].ToString();
                 cbxIl.Text = dataRow["IL"].ToString(); 
@@ -112,27 +129,36 @@ namespace Ticari_Otomasyon
                 sqlBaglantisi.baglanti().Close();
                 MessageBox.Show("Müşteri Silindi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            Listele();
+            musteriListele();
+            temizle();
         }
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("UPDATE FROM TBL_MUSTERILER SET AD=@p1,SOYAD=@p2,TELEFON=@p3,TELEFON2=@p4,TC=@p5,MAIL=@p6,IL=@p7,ILCE=@p8,VERGIDAIRE=@p9,ADRES=@p10 where ID=@p11", sqlBaglantisi.baglanti());
+            SqlCommand command = new SqlCommand("update TBL_MUSTERILER set AD=@p1,SOYAD=@p2,TELEFON=@p3,TELEFON2=@p4,TC=@p5,MAIL=@p6,IL=@p7,ILCE=@p8,ADRES=@p9,VERGIDAIRE=@p10 where ID=@p11", sqlBaglantisi.baglanti());
+
             command.Parameters.AddWithValue("@p1", txtAd.Text);
             command.Parameters.AddWithValue("@p2", txtSoyad.Text);
-            command.Parameters.AddWithValue("@p3", mskTelefon.Text);
-            command.Parameters.AddWithValue("@p4", mskTelefon_2.Text);
+            command.Parameters.AddWithValue("@p3", mskTelefon1.Text);
+            command.Parameters.AddWithValue("@p4", mskTelefon2.Text);
             command.Parameters.AddWithValue("@p5", mskTc.Text);
             command.Parameters.AddWithValue("@p6", txtMail.Text);
             command.Parameters.AddWithValue("@p7", cbxIl.Text);
             command.Parameters.AddWithValue("@p8", cbxIlce.Text);
             command.Parameters.AddWithValue("@p9", rchAdres.Text);
             command.Parameters.AddWithValue("@p10", txtVergiDaire.Text);
-            command.Parameters.AddWithValue("@p11", txtId);
+            command.Parameters.AddWithValue("@p11", txtId.Text);
             command.ExecuteNonQuery();
             sqlBaglantisi.baglanti().Close();
-            MessageBox.Show("Müşteri bilgileri güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Listele();
+            MessageBox.Show("Müşteri Bilgileri Güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            musteriListele();
+            temizle();
+
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            temizle();
         }
     }
 }
