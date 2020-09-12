@@ -154,6 +154,7 @@
             this.BtnPersoneller.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnPersoneller.Name = "BtnPersoneller";
             this.BtnPersoneller.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnPersoneller.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersoneller_ItemClick);
             // 
             // BtnAnaSayfa
             // 

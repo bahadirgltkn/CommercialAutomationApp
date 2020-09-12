@@ -54,5 +54,15 @@ namespace Ticari_Otomasyon
             }
         }
 
+        FrmPersoneller personel;
+        private void BtnPersoneller_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(personel == null)
+            {
+                personel = new FrmPersoneller();
+                personel.MdiParent = this;
+                personel.Show();
+            }
+        }
     }
 }
