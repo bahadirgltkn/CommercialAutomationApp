@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRehber));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
@@ -62,8 +63,9 @@
             // xtraTabPage1
             // 
             this.xtraTabPage1.Controls.Add(this.gridControlRehberMusteriler);
+            this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1922, 739);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1922, 723);
             this.xtraTabPage1.Text = "Müşteriler";
             // 
             // gridControlRehberMusteriler
@@ -92,8 +94,9 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.gridControlRehberFirmalar);
+            this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1922, 739);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1922, 723);
             this.xtraTabPage2.Text = "Firmalar";
             // 
             // gridControlRehberFirmalar

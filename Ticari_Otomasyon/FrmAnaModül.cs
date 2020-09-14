@@ -75,5 +75,16 @@ namespace Ticari_Otomasyon
                 rehber.Show();
             }
         }
+
+        FrmGiderler gider;
+        private void BtnGiderler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(gider == null)
+            {
+                gider = new FrmGiderler();
+                gider.MdiParent = this;
+                gider.Show();
+            }
+        }
     }
 }

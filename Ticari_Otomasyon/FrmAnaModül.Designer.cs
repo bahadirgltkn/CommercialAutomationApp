@@ -185,6 +185,7 @@
             this.BtnGiderler.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnGiderler.Name = "BtnGiderler";
             this.BtnGiderler.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnGiderler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGiderler_ItemClick);
             // 
             // BtnKasa
             // 

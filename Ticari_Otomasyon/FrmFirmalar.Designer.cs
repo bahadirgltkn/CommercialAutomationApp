@@ -435,6 +435,7 @@
             this.xtraTabPage1.Controls.Add(this.groupControl4);
             this.xtraTabPage1.Controls.Add(this.groupControl3);
             this.xtraTabPage1.Controls.Add(this.groupControl2);
+            this.xtraTabPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage1.ImageOptions.Image")));
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(372, 734);
             this.xtraTabPage1.Text = "Firma Bilgileri";
@@ -567,6 +568,7 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.groupControl5);
+            this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
             this.xtraTabPage2.Name = "xtraTabPage2";
             this.xtraTabPage2.Size = new System.Drawing.Size(372, 734);
             this.xtraTabPage2.Text = "Adres Bilgileri";
@@ -612,6 +614,7 @@
             // 
             this.xtraTabPage3.Controls.Add(this.groupControl7);
             this.xtraTabPage3.Controls.Add(this.groupControl6);
+            this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
             this.xtraTabPage3.Name = "xtraTabPage3";
             this.xtraTabPage3.Size = new System.Drawing.Size(372, 734);
             this.xtraTabPage3.Text = "Özel Kodlar";
@@ -768,7 +771,7 @@
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.gridControlFirmalar);
             this.Name = "FrmFirmalar";
-            this.Text = "KOD 1:";
+            this.Text = "FİRMALAR";
             this.Load += new System.EventHandler(this.FrmFirmalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlFirmalar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
