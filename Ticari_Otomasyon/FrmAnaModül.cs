@@ -64,5 +64,16 @@ namespace Ticari_Otomasyon
                 personel.Show();
             }
         }
+
+        FrmRehber rehber;
+        private void BtnRehber_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(rehber == null)
+            {
+                rehber = new FrmRehber();
+                rehber.MdiParent = this;
+                rehber.Show();
+            }
+        }
     }
 }

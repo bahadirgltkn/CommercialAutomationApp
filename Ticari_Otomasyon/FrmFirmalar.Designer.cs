@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFirmalar));
             this.gridControlFirmalar = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -72,11 +72,16 @@
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
+            this.rchKod1 = new System.Windows.Forms.RichTextBox();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
+            this.rchKod2 = new System.Windows.Forms.RichTextBox();
+            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
+            this.rchKod3 = new System.Windows.Forms.RichTextBox();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.txtKod3 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
@@ -84,11 +89,6 @@
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             this.txtKod1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
-            this.rchKod1 = new System.Windows.Forms.RichTextBox();
-            this.rchKod2 = new System.Windows.Forms.RichTextBox();
-            this.rchKod3 = new System.Windows.Forms.RichTextBox();
-            this.btnTemizle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlFirmalar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMail.Properties)).BeginInit();
@@ -119,19 +119,19 @@
             this.xtraTabControl2.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             this.xtraTabPage5.SuspendLayout();
+            this.xtraTabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKod3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKod2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKod1.Properties)).BeginInit();
-            this.xtraTabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControlFirmalar
             // 
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gridControlFirmalar.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gridControlFirmalar.Location = new System.Drawing.Point(0, 0);
             this.gridControlFirmalar.MainView = this.gridView1;
             this.gridControlFirmalar.Name = "gridControlFirmalar";
@@ -142,6 +142,9 @@
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.gridControlFirmalar;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -589,6 +592,22 @@
             this.groupControl5.TabIndex = 0;
             this.groupControl5.Text = "groupControl5";
             // 
+            // btnTemizle
+            // 
+            this.btnTemizle.Appearance.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.btnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTemizle.Appearance.ForeColor = System.Drawing.Color.White;
+            this.btnTemizle.Appearance.Options.UseBackColor = true;
+            this.btnTemizle.Appearance.Options.UseFont = true;
+            this.btnTemizle.Appearance.Options.UseForeColor = true;
+            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.ImageOptions.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(171, 522);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(127, 42);
+            this.btnTemizle.TabIndex = 30;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Controls.Add(this.groupControl7);
@@ -625,12 +644,49 @@
             this.xtraTabPage4.Size = new System.Drawing.Size(354, 450);
             this.xtraTabPage4.Text = "Özel Kod 1";
             // 
+            // rchKod1
+            // 
+            this.rchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchKod1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.rchKod1.Location = new System.Drawing.Point(0, 0);
+            this.rchKod1.Name = "rchKod1";
+            this.rchKod1.Size = new System.Drawing.Size(354, 450);
+            this.rchKod1.TabIndex = 0;
+            this.rchKod1.Text = "";
+            // 
             // xtraTabPage5
             // 
             this.xtraTabPage5.Controls.Add(this.rchKod2);
             this.xtraTabPage5.Name = "xtraTabPage5";
             this.xtraTabPage5.Size = new System.Drawing.Size(354, 450);
             this.xtraTabPage5.Text = "Özel Kod 2";
+            // 
+            // rchKod2
+            // 
+            this.rchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchKod2.Font = new System.Drawing.Font("Consolas", 12F);
+            this.rchKod2.Location = new System.Drawing.Point(0, 0);
+            this.rchKod2.Name = "rchKod2";
+            this.rchKod2.Size = new System.Drawing.Size(354, 450);
+            this.rchKod2.TabIndex = 1;
+            this.rchKod2.Text = "";
+            // 
+            // xtraTabPage6
+            // 
+            this.xtraTabPage6.Controls.Add(this.rchKod3);
+            this.xtraTabPage6.Name = "xtraTabPage6";
+            this.xtraTabPage6.Size = new System.Drawing.Size(354, 450);
+            this.xtraTabPage6.Text = "Özel Kod 3";
+            // 
+            // rchKod3
+            // 
+            this.rchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rchKod3.Font = new System.Drawing.Font("Consolas", 12F);
+            this.rchKod3.Location = new System.Drawing.Point(0, 0);
+            this.rchKod3.Name = "rchKod3";
+            this.rchKod3.Size = new System.Drawing.Size(354, 450);
+            this.rchKod3.TabIndex = 1;
+            this.rchKod3.Text = "";
             // 
             // groupControl6
             // 
@@ -704,59 +760,6 @@
             this.labelControl16.TabIndex = 30;
             this.labelControl16.Text = "KOD 1:";
             // 
-            // xtraTabPage6
-            // 
-            this.xtraTabPage6.Controls.Add(this.rchKod3);
-            this.xtraTabPage6.Name = "xtraTabPage6";
-            this.xtraTabPage6.Size = new System.Drawing.Size(354, 450);
-            this.xtraTabPage6.Text = "Özel Kod 3";
-            // 
-            // rchKod1
-            // 
-            this.rchKod1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchKod1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rchKod1.Location = new System.Drawing.Point(0, 0);
-            this.rchKod1.Name = "rchKod1";
-            this.rchKod1.Size = new System.Drawing.Size(354, 450);
-            this.rchKod1.TabIndex = 0;
-            this.rchKod1.Text = "";
-            // 
-            // rchKod2
-            // 
-            this.rchKod2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchKod2.Font = new System.Drawing.Font("Consolas", 12F);
-            this.rchKod2.Location = new System.Drawing.Point(0, 0);
-            this.rchKod2.Name = "rchKod2";
-            this.rchKod2.Size = new System.Drawing.Size(354, 450);
-            this.rchKod2.TabIndex = 1;
-            this.rchKod2.Text = "";
-            // 
-            // rchKod3
-            // 
-            this.rchKod3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rchKod3.Font = new System.Drawing.Font("Consolas", 12F);
-            this.rchKod3.Location = new System.Drawing.Point(0, 0);
-            this.rchKod3.Name = "rchKod3";
-            this.rchKod3.Size = new System.Drawing.Size(354, 450);
-            this.rchKod3.TabIndex = 1;
-            this.rchKod3.Text = "";
-            // 
-            // btnTemizle
-            // 
-            this.btnTemizle.Appearance.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.btnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTemizle.Appearance.ForeColor = System.Drawing.Color.White;
-            this.btnTemizle.Appearance.Options.UseBackColor = true;
-            this.btnTemizle.Appearance.Options.UseFont = true;
-            this.btnTemizle.Appearance.Options.UseForeColor = true;
-            this.btnTemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btnTemizle.Location = new System.Drawing.Point(171, 522);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(127, 42);
-            this.btnTemizle.TabIndex = 30;
-            this.btnTemizle.Text = "Temizle";
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
-            // 
             // FrmFirmalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -801,13 +804,13 @@
             this.xtraTabControl2.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);
             this.xtraTabPage5.ResumeLayout(false);
+            this.xtraTabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtKod3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKod2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtKod1.Properties)).EndInit();
-            this.xtraTabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

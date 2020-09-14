@@ -245,6 +245,7 @@
             this.BtnRehber.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnRehber.Name = "BtnRehber";
             this.BtnRehber.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnRehber.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnRehber_ItemClick);
             // 
             // BtnFaturalar
             // 
