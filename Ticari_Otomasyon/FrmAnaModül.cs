@@ -86,5 +86,16 @@ namespace Ticari_Otomasyon
                 gider.Show();
             }
         }
+
+        FrmBankalar banka;
+        private void BtnBankalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(banka == null)
+            {
+                banka = new FrmBankalar();
+                banka.MdiParent = this;
+                banka.Show();
+            }
+        }
     }
 }
