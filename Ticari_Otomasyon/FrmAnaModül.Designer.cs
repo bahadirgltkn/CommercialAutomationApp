@@ -263,6 +263,7 @@
             this.BtnFaturalar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnFaturalar.Name = "BtnFaturalar";
             this.BtnFaturalar.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.BtnFaturalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturalar_ItemClick);
             // 
             // BtnAyarlar
             // 

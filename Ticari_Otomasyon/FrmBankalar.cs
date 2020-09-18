@@ -182,7 +182,7 @@ namespace Ticari_Otomasyon
             command.ExecuteNonQuery();
             sqlBaglantisi.baglanti().Close();
             MessageBox.Show("Banka Bilgileri Güncellenmiştir", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            bankaListele();
+            bankaListele(); 
            
         }
     }

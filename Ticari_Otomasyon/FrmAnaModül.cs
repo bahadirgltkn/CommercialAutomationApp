@@ -97,5 +97,16 @@ namespace Ticari_Otomasyon
                 banka.Show();
             }
         }
+
+        FrmFaturalar fatura;
+        private void BtnFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(fatura == null)
+            {
+                fatura = new FrmFaturalar();
+                fatura.MdiParent = this;
+                fatura.Show();
+            }
+        }
     }
 }
