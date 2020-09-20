@@ -157,7 +157,7 @@
             this.txtMail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtMail.Properties.Appearance.Options.UseFont = true;
             this.txtMail.Size = new System.Drawing.Size(232, 28);
-            this.txtMail.TabIndex = 30;
+            this.txtMail.TabIndex = 10;
             // 
             // txtVergiDaire
             // 
@@ -166,7 +166,7 @@
             this.txtVergiDaire.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtVergiDaire.Properties.Appearance.Options.UseFont = true;
             this.txtVergiDaire.Size = new System.Drawing.Size(232, 28);
-            this.txtVergiDaire.TabIndex = 29;
+            this.txtVergiDaire.TabIndex = 13;
             // 
             // cbxIlce
             // 
@@ -177,7 +177,7 @@
             this.cbxIlce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbxIlce.Size = new System.Drawing.Size(232, 28);
-            this.cbxIlce.TabIndex = 28;
+            this.cbxIlce.TabIndex = 12;
             // 
             // cbxIl
             // 
@@ -188,7 +188,7 @@
             this.cbxIl.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbxIl.Size = new System.Drawing.Size(232, 28);
-            this.cbxIl.TabIndex = 27;
+            this.cbxIl.TabIndex = 11;
             this.cbxIl.SelectedIndexChanged += new System.EventHandler(this.cbxIl_SelectedIndexChanged);
             // 
             // mskTc
@@ -198,7 +198,7 @@
             this.mskTc.Mask = "00000000000";
             this.mskTc.Name = "mskTc";
             this.mskTc.Size = new System.Drawing.Size(232, 29);
-            this.mskTc.TabIndex = 26;
+            this.mskTc.TabIndex = 5;
             this.mskTc.ValidatingType = typeof(int);
             // 
             // mskTelefon_1
@@ -208,7 +208,7 @@
             this.mskTelefon_1.Mask = "(999) 000-0000";
             this.mskTelefon_1.Name = "mskTelefon_1";
             this.mskTelefon_1.Size = new System.Drawing.Size(232, 29);
-            this.mskTelefon_1.TabIndex = 25;
+            this.mskTelefon_1.TabIndex = 6;
             // 
             // labelControl11
             // 
@@ -244,7 +244,7 @@
             this.BtnSil.Location = new System.Drawing.Point(171, 404);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(125, 42);
-            this.BtnSil.TabIndex = 22;
+            this.BtnSil.TabIndex = 19;
             this.BtnSil.Text = "Sil";
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
@@ -260,7 +260,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(171, 463);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(127, 42);
-            this.BtnGuncelle.TabIndex = 21;
+            this.BtnGuncelle.TabIndex = 20;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
@@ -278,7 +278,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(171, 346);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(125, 42);
-            this.BtnKaydet.TabIndex = 20;
+            this.BtnKaydet.TabIndex = 18;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
@@ -287,7 +287,7 @@
             this.rchAdres.Location = new System.Drawing.Point(110, 155);
             this.rchAdres.Name = "rchAdres";
             this.rchAdres.Size = new System.Drawing.Size(232, 161);
-            this.rchAdres.TabIndex = 19;
+            this.rchAdres.TabIndex = 14;
             this.rchAdres.Text = "";
             // 
             // labelControl9
@@ -347,7 +347,7 @@
             this.mskTelefon_2.Mask = "(999) 000-0000";
             this.mskTelefon_2.Name = "mskTelefon_2";
             this.mskTelefon_2.Size = new System.Drawing.Size(232, 29);
-            this.mskTelefon_2.TabIndex = 9;
+            this.mskTelefon_2.TabIndex = 7;
             // 
             // labelControl4
             // 
@@ -366,7 +366,7 @@
             this.txtSektor.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSektor.Properties.Appearance.Options.UseFont = true;
             this.txtSektor.Size = new System.Drawing.Size(232, 28);
-            this.txtSektor.TabIndex = 6;
+            this.txtSektor.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -385,7 +385,7 @@
             this.txtAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAd.Properties.Appearance.Options.UseFont = true;
             this.txtAd.Size = new System.Drawing.Size(232, 28);
-            this.txtAd.TabIndex = 4;
+            this.txtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -404,7 +404,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(232, 28);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 22;
             // 
             // labelControl1
             // 
@@ -466,7 +466,7 @@
             this.mskFax.Mask = "(999) 000-0000";
             this.mskFax.Name = "mskFax";
             this.mskFax.Size = new System.Drawing.Size(232, 29);
-            this.mskFax.TabIndex = 28;
+            this.mskFax.TabIndex = 9;
             // 
             // labelControl15
             // 
@@ -485,7 +485,7 @@
             this.mskTelefon_3.Mask = "(999) 000-0000";
             this.mskTelefon_3.Name = "mskTelefon_3";
             this.mskTelefon_3.Size = new System.Drawing.Size(232, 29);
-            this.mskTelefon_3.TabIndex = 26;
+            this.mskTelefon_3.TabIndex = 8;
             // 
             // labelControl14
             // 
@@ -529,7 +529,7 @@
             this.txtYetkiliGorev.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtYetkiliGorev.Properties.Appearance.Options.UseFont = true;
             this.txtYetkiliGorev.Size = new System.Drawing.Size(232, 28);
-            this.txtYetkiliGorev.TabIndex = 8;
+            this.txtYetkiliGorev.TabIndex = 4;
             // 
             // labelControl12
             // 
@@ -548,7 +548,7 @@
             this.txtYetkili.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtYetkili.Properties.Appearance.Options.UseFont = true;
             this.txtYetkili.Size = new System.Drawing.Size(232, 28);
-            this.txtYetkili.TabIndex = 6;
+            this.txtYetkili.TabIndex = 3;
             // 
             // groupControl2
             // 
@@ -606,7 +606,7 @@
             this.btnTemizle.Location = new System.Drawing.Point(171, 522);
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.Size = new System.Drawing.Size(127, 42);
-            this.btnTemizle.TabIndex = 30;
+            this.btnTemizle.TabIndex = 21;
             this.btnTemizle.Text = "Temizle";
             this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
@@ -713,7 +713,7 @@
             this.txtKod3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKod3.Properties.Appearance.Options.UseFont = true;
             this.txtKod3.Size = new System.Drawing.Size(232, 28);
-            this.txtKod3.TabIndex = 35;
+            this.txtKod3.TabIndex = 17;
             // 
             // labelControl18
             // 
@@ -732,7 +732,7 @@
             this.txtKod2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKod2.Properties.Appearance.Options.UseFont = true;
             this.txtKod2.Size = new System.Drawing.Size(232, 28);
-            this.txtKod2.TabIndex = 33;
+            this.txtKod2.TabIndex = 16;
             // 
             // labelControl17
             // 
@@ -751,7 +751,7 @@
             this.txtKod1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtKod1.Properties.Appearance.Options.UseFont = true;
             this.txtKod1.Size = new System.Drawing.Size(232, 28);
-            this.txtKod1.TabIndex = 31;
+            this.txtKod1.TabIndex = 15;
             // 
             // labelControl16
             // 

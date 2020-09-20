@@ -199,7 +199,7 @@
             this.rchDetay.Location = new System.Drawing.Point(106, 431);
             this.rchDetay.Name = "rchDetay";
             this.rchDetay.Size = new System.Drawing.Size(226, 106);
-            this.rchDetay.TabIndex = 19;
+            this.rchDetay.TabIndex = 8;
             this.rchDetay.Text = "";
             // 
             // labelControl9
@@ -239,7 +239,7 @@
             this.txtSatis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtSatis.Properties.Appearance.Options.UseFont = true;
             this.txtSatis.Size = new System.Drawing.Size(226, 28);
-            this.txtSatis.TabIndex = 14;
+            this.txtSatis.TabIndex = 7;
             // 
             // labelControl6
             // 
@@ -258,7 +258,7 @@
             this.txtAlis.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAlis.Properties.Appearance.Options.UseFont = true;
             this.txtAlis.Size = new System.Drawing.Size(226, 28);
-            this.txtAlis.TabIndex = 12;
+            this.txtAlis.TabIndex = 6;
             // 
             // labelControl5
             // 
@@ -276,7 +276,7 @@
             this.nudAdet.Location = new System.Drawing.Point(106, 281);
             this.nudAdet.Name = "nudAdet";
             this.nudAdet.Size = new System.Drawing.Size(226, 29);
-            this.nudAdet.TabIndex = 10;
+            this.nudAdet.TabIndex = 5;
             // 
             // mskYil
             // 
@@ -285,7 +285,7 @@
             this.mskYil.Mask = "0000";
             this.mskYil.Name = "mskYil";
             this.mskYil.Size = new System.Drawing.Size(226, 29);
-            this.mskYil.TabIndex = 9;
+            this.mskYil.TabIndex = 4;
             this.mskYil.ValidatingType = typeof(int);
             // 
             // txtModel
@@ -295,7 +295,7 @@
             this.txtModel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtModel.Properties.Appearance.Options.UseFont = true;
             this.txtModel.Size = new System.Drawing.Size(226, 28);
-            this.txtModel.TabIndex = 8;
+            this.txtModel.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -314,7 +314,7 @@
             this.txtMarka.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtMarka.Properties.Appearance.Options.UseFont = true;
             this.txtMarka.Size = new System.Drawing.Size(226, 28);
-            this.txtMarka.TabIndex = 6;
+            this.txtMarka.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -333,7 +333,7 @@
             this.txtAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAd.Properties.Appearance.Options.UseFont = true;
             this.txtAd.Size = new System.Drawing.Size(226, 28);
-            this.txtAd.TabIndex = 4;
+            this.txtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -352,7 +352,7 @@
             this.txtId.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtId.Properties.Appearance.Options.UseFont = true;
             this.txtId.Size = new System.Drawing.Size(226, 28);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 15;
             // 
             // labelControl1
             // 
